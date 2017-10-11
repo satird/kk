@@ -12,6 +12,9 @@
     </head>
     <body class="main">
         <header class="main__header">
+            <!--Logo-->
+            <div class="header__logo"><a href="#"><img src="src/img/GED-Logo.svg" width="210px" height="50px" alt="kk-project"></a></div>
+            <!--Menu-->
             <input type="checkbox" id="nav-toggle" hidden>
             <nav  tabindex="0" class="header__nav">
                 <label for="nav-toggle" class="nav-toggle" onclick></label>
@@ -23,6 +26,14 @@
                     <li class="header__navigation"><a href="#">Blog</a></li>
                     <li class="header__navigation"><a href="#">Features</a></li>
                     <li class="header__navigation"><a href="#">Contacts</a></li>
+                    <li class="header__navigation">
+                             <!--Search-->
+                        <section id="search" class="header__search">
+                            <form method="post" action="#">
+                                <input type="text" name="query" id="query" placeholder="Поиск">
+                            </form>
+                        </section>
+                    </li>
                 </ul>
             </nav>
         </header>
