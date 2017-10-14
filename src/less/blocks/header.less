@@ -1,10 +1,11 @@
 .main__header {
-    height: 51px;
+    height: 80px;
     width: 100vw;
 
     background-color: #76c7c0;
 
     position: fixed;
+    z-index: 200;
 }
 
 .header__logo {
@@ -12,16 +13,20 @@
 }
 
 
-@media screen and (min-width: 728px) {
+@media screen and (min-width: 933px) {
 
     .main__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
         background-image: url(../img/Path.png);
         background-repeat: repeat-x;
         background-position: bottom;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        height: 100%;
     }
 
     .header__nav {
@@ -31,6 +36,45 @@
     .header__nav-btn {
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
     }
+
+.header__navigation a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px; 
+        transition: 0.2s;
+    }
+
+/*Активное меню*/
+
+    .header__navigation-active a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        background-color: #62a29e;
+
+        border-radius: 5px;
+        box-shadow: 0px 3px 0px 0px #528b86; 
+    }
+/*Меню при наведение*/
+
+    .header__navigation:nth-child(n+2) a:hover{
+        background-color: #e8645a;
+
+        border-radius: 5px;
+        box-shadow: 0px 3px 0px 0px #e2534b; 
+    }
+
+/*Выравниваем меню*/
+
+/*.header__nav li{
+    line-height: 51px;
+}*/
+
+
 
 }

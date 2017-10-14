@@ -8,33 +8,131 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <title>Совместный проект КК</title>
         <link rel="stylesheet" href="css/style.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+        <script src="https://use.fontawesome.com/13fe278ee5.js"></script>
+        
     </head>
     <body class="main">
         <header class="main__header">
-            <!--Logo-->
-            <div class="header__logo"><a href="#"><img src="src/img/GED-Logo.svg" width="210px" height="50px" alt="kk-project"></a></div>
-            <!--Menu-->
-            <input type="checkbox" id="nav-toggle" hidden>
-            <nav  tabindex="0" class="header__nav">
-                <label for="nav-toggle" class="nav-toggle" onclick></label>
-                <ul  tabindex="0" class="header__nav-btn">
-                    <li class="header__navigation-menu header__navigation"><a class="header__menu-hamburger" href="#">Home</a></li>
-                    <li class="header__navigation header__navigation-news-1"><a href="testpage.html">About</a></li>
-                    <li class="header__navigation"><a href="#">Services</a></li>
-                    <li class="header__navigation header__navigation-price-2"><a href="price.html">Portfolio</a></li>
-                    <li class="header__navigation"><a href="#">Blog</a></li>
-                    <li class="header__navigation"><a href="#">Features</a></li>
-                    <li class="header__navigation"><a href="#">Contacts</a></li>
-                    <li class="header__navigation">
-                             <!--Search-->
-                        <section id="search" class="header__search">
-                            <form method="post" action="#">
-                                <input type="text" name="query" id="query" placeholder="Поиск">
+            <div class="container header">
+                <!--Logo-->
+                <div class="header__logo"><a href="#"><span class="small-name">Таткiна</span><span class="big-name">Хата</span></a></div>
+                <!--Menu-->
+                <input type="checkbox" id="nav-toggle" hidden>
+                <nav  tabindex="0" class="header__nav">
+                    <label for="nav-toggle" class="nav-toggle" onclick></label>
+                    <ul  tabindex="0" class="header__nav-btn">
+                        <li class="header__navigation-menu header__navigation header__navigation-active"><a class="header__menu-hamburger">Главная</a></li>
+                        <li class="header__navigation header__navigation-news-1"><a href="testpage.html">Кругозор</a></li>
+                        <li class="header__navigation"><a href="#">Сделай сам</a></li>
+                        <li class="header__navigation header__navigation-price-2"><a href="price.html">Домик</a></li>
+                        <li class="header__navigation"><a href="#">Кухня</a></li>
+                        <li class="header__navigation"><a href="#">Забавы</a></li>
+                        <li class="header__navigation"><a href="#">О нас</a></li>
+                        <li class="header__navigation">
+                                 <!--Search-->
+                            <form action="" method="post" class="search">
+                                <input type="search" name="" placeholder="Поиск..." class="input" />
+                                <input type="submit" name="" value="" class="submit" />
                             </form>
-                        </section>
-                    </li>
-                </ul>
-            </nav>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main class="main__nav">
+            <div class="fotorama" data-width="100%"
+                     data-ratio="666/500"
+                     data-minwidth="320"
+                     data-maxwidth="100vw"
+                     data-minheight="200"
+                     data-maxheight="50%" 
+                     data-loop="true"
+                     data-allowfullscreen="native"
+                     data-autoplay="true">
+                <div class="text-slider" data-img="img/1.jpg"><a href="#">Кругозор</a></div>
+                <div class="text-slider" data-img="img/2.jpg"><a href="#">Сделай сам</a></div>
+                <div class="text-slider" data-img="img/3.jpg"><a href="#">Домик</a></div>
+                <div class="text-slider" data-img="img/4.jpg"><a href="#">Кухня</a></div>
+                <div class="text-slider" data-img="img/9.jpg"><a href="#">Забавы</a></div>
+                <div class="text-slider" data-img="img/1.jpg"><a href="#">О нас</a></div>
+            </div>
+
+            <div class="container">
+                <div class="main__about">
+                    <div class="main__about-text">
+                       <h2>Запили новость!!!</h2>
+                       <span><p>Вы можете стать автором новости предложив её администратору ...</p></span> 
+                    </div>
+                    <button type="button" class="btn main__about-btn">
+                        <a href="#">
+                        <span class="btn-text">Читать дальше</span>
+                        </a>
+                    </button>                    
+                </div>
+
+                <div class="main__news">
+
+                    <div class="news__block">
+                        <div class="news__block-logo"><i class="fa fa-heart fa-3x" aria-hidden="true"></i></div>
+                        <div class="news__block-text">
+                            <h3>Всё круто</h3>
+                            <p>Текст коротенькой новости, от которого все бросятся открывать ссылку, чтобы немедленно прочитать её.</p>
+                        </div>
+                        <button class="btn-green">
+                            <a href="#">
+                                <span class="btn-text">Читать дальше</span>
+                            </a>
+                        </button>
+                    </div>
+
+                    <div class="news__block">
+                        <div class="news__block-logo"><i class="fa fa-mars-double fa-3x" aria-hidden="true"></i></div>
+                        <div class="news__block-text">
+                            <h3>Всё круто</h3>
+                            <p>Текст коротенькой новости, от которого все бросятся открывать ссылку, чтобы немедленно прочитать её.</p>
+                        </div>
+                        <button class="btn-green">
+                            <a href="#">
+                                <span class="btn-text">Читать дальше</span>
+                            </a>
+                        </button>
+                    </div>
+
+                    <div class="news__block">
+                        <div class="news__block-logo"><i class="fa fa-spinner fa-3x" aria-hidden="true"></i></div>
+                        <div class="news__block-text">
+                            <h3>Всё круто</h3>
+                            <p>Текст коротенькой новости, от которого все бросятся открывать ссылку, чтобы немедленно прочитать её.</p>
+                        </div>
+                        <button class="btn-green">
+                            <a href="#">
+                                <span class="btn-text">Читать дальше</span>
+                            </a>
+                        </button>
+                    </div>
+
+                    <div class="news__block">
+                        <div class="news__block-logo"><i class="fa fa-vk fa-3x" aria-hidden="true"></i></div>
+                        <div class="news__block-text">
+                            <h3>Всё круто</h3>
+                            <p>Текст коротенькой новости, от которого все бросятся открывать ссылку, чтобы немедленно прочитать её.</p>
+                        </div>
+                        <button class="btn-green">
+                            <a href="#">
+                                <span class="btn-text-small">Читать дальше</span>
+                            </a>
+                        </button>
+                    </div>
+
+            </div>
+        </main>
+
+        <script type="text/javascript" src="src/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="src/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="src/js/slick.min.js"></script>
+        <script type="text/javascript" src="src/js/js.js"></script>
+        <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+    </body>

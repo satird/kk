@@ -1,0 +1,67 @@
+/*блок о нас с кнопкой*/
+
+.main__about {
+	min-height: 100px;
+	width: auto;
+
+	background-color: @bg-lightgrey;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	padding-bottom: 26px;
+	padding-top: 23px;
+	padding-right: 35px;
+	padding-left: 30px;
+
+	margin-top: 50px;
+}
+
+.main__about-text h2{
+	font-size: @baseLB;
+	color: @bodyFont;
+	font-weight: 700;
+	line-height: 36px;
+}
+
+.main__about-text p{
+	font-size: @baseNV2;
+	color: @bodyFont;
+	font-weight: 700;
+	line-height: 21px;
+}
+
+.btn {
+	padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: #e8645a;
+
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px 0px #e2534b; 
+    border: none;
+    user-select: none;/* убирать выделение текста */
+    outline: none;/* убирать контур в Mozilla */
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #e2534b;
+}
+
+.btn a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        font-size: 20px;
+        line-height: 24px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+
+    }
