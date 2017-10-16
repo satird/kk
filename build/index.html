@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/slick.css"/>
         <script src="https://use.fontawesome.com/13fe278ee5.js"></script>
+        <script type="text/javascript" src="src/js/modernizr.custom.53451.js"></script>
         
     </head>
     <body class="main">
@@ -56,7 +57,7 @@
                 <div class="text-slider" data-img="img/3.jpg"><a href="#">Домик</a></div>
                 <div class="text-slider" data-img="img/4.jpg"><a href="#">Кухня</a></div>
                 <div class="text-slider" data-img="img/9.jpg"><a href="#">Забавы</a></div>
-                <div class="text-slider" data-img="img/1.jpg"><a href="#">О нас</a></div>
+                <div class="text-slider" data-img="img/10.jpg"><a href="#">О нас</a></div>
             </div>
 
             <div class="container">
@@ -125,14 +126,54 @@
                             </a>
                         </button>
                     </div>
+            </div>
+            </div>
+            <div class="main__geo">
+                <div class="container">
+                    <h2 class="main__geo-name">Только у нас геокэшинг в Минске и на русском</h2>
+                    <p class="main__geo-text">Бла-бла. Вы всё знаете и никуда всё равно не пойдёте, но мы попробуем, от вас: чуть-чуть внимание и поехали!!!!</p>
 
+
+                    <section id="dg-container" class="dg-container">
+                        <div class="dg-wrapper">
+                            <a href="#"><img src="img/11.jpg" alt="image05"><div>http://hardwork.by/</div></a>
+                            <a href="#"><img src="img/12.jpg" alt="image06"><div>http://onliner.by/</div></a>
+                            <a href="#"><img src="img/13.jpg" alt="image07"><div>http://tut.by/</div></a>
+                        </div>
+                        <nav>   
+                            <span class="dg-prev">&lt;</span>
+                            <span class="dg-next">&gt;</span>
+                        </nav>
+                    </section>
+
+                    <div class="fotorama dg-fotorama" data-width="100%"
+                     data-ratio="666/500"
+                     data-minwidth="320"
+                     data-maxwidth="100vw"
+                     data-minheight="200"
+                     data-maxheight="50%" 
+                     data-loop="true"
+                     data-allowfullscreen="native"
+                     data-autoplay="true">
+                        <div class="text-slider" data-img="img/5.jpg"><a href="#">http://hardwork.by</a></div>
+                        <div class="text-slider" data-img="img/6.jpg"><a href="#">http://onliner.by</a></div>
+                        <div class="text-slider" data-img="img/7.jpg"><a href="#">http://tut.by/</a></div>
+                    </div>
+                    
+                </div>
             </div>
         </main>
 
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script type="text/javascript" src="src/js/jquery-ui.min.js"></script>
         <script type="text/javascript" src="src/js/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="src/js/slick.min.js"></script>
+        <script type="text/javascript" src="src/js/jquery.gallery.js"></script>
         <script type="text/javascript" src="src/js/js.js"></script>
         <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
         <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+        <script type="text/javascript">
+            $(function() {
+                $('#dg-container').gallery();
+            });
+        </script/>
     </body>

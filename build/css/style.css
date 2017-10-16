@@ -184,7 +184,7 @@ body {
     height: 500px;
 }*/
 .fotorama {
-  background-color: #7f8c8c;
+  background-color: #ececec;
 }
 .text-slider {
   position: absolute;
@@ -355,7 +355,6 @@ input[type="search"] {
   text-transform: uppercase;
   color: #fff;
 }
-/*@import "blocks/slick.less";*/
 /*меню новосте и таймер*/
 .main__news {
   display: flex;
@@ -449,9 +448,121 @@ input[type="search"] {
   color: yellow;
 }
 .fa-vk {
-  color: blue;
+  color: #fff;
+  border-radius: 1px solid black;
+  padding: 3px 8px 5px 5px;
+  background-color: #507299;
+  border-radius: 5px;
 }
 /*@import "font-awesome/less/variables.less";*/
+.main__geo {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background-color: #ececec;
+  background-image: url(../img/PathWhite.png);
+  background-repeat: repeat-x;
+  background-position: top;
+  margin-top: 60px;
+}
+.main__geo-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e1524b;
+  padding-top: 75px;
+  text-align: center;
+}
+.main__geo-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #777777;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.dg-fotorama {
+  display: none;
+}
+.dg-container {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+.dg-wrapper {
+  width: 481px;
+  height: 304px /*316px*/;
+  margin: 0 auto;
+  position: relative;
+  transform-style: preserve-3d;
+  -o-perspective: 1000px;
+  -ms-perspective: 1000px;
+  perspective: 1000px;
+}
+.dg-wrapper a {
+  width: 482px;
+  height: 304px /*316px*/;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  /*добавил для браузер1*/
+  background: transparent url(../img/browser1.png) no-repeat top left;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.dg-wrapper a.dg-transition {
+  transition: all 0.5s ease-in-out;
+}
+.dg-wrapper a img {
+  display: block;
+  border-radius: 5px;
+  /*всё тудаже*/
+  margin: 40px 0px 0px 4px;
+  /*padding: 41px 0 0 1px - значение по умолчанию*/
+}
+.dg-wrapper a div {
+  /*font-style: italic;*/
+  text-align: center;
+  line-height: 50px;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  color: #7f8c8c /*#333*/;
+  font-size: 16px;
+  width: 100%;
+  bottom: -55px;
+  display: none;
+  position: absolute;
+}
+.dg-wrapper a.dg-center div {
+  display: block;
+}
+.dg-container nav {
+  width: 58px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -29px;
+}
+.dg-container nav span {
+  text-indent: -9000px;
+  float: left;
+  cursor: pointer;
+  width: 24px;
+  height: 25px;
+  opacity: 0.8;
+  background: transparent url(../img/arrows.png) no-repeat top left;
+}
+.dg-container nav span:hover {
+  opacity: 1;
+}
+.dg-container nav span.dg-next {
+  background-position: top right;
+  margin-left: 10px;
+}
 @media screen and (min-width: 1070px) {/*  .right__container {
     display: none;
 }*//*  .left__container {
@@ -691,6 +802,12 @@ input[type="search"] {
   }
   .news__content-jpg {
     padding-bottom: 10px;
+  }
+  .dg-container {
+    display: none;
+  }
+  .dg-fotorama {
+    display: block;
   }
 }
 @media screen and (min-width: 320px) {
