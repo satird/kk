@@ -204,7 +204,6 @@ html {
  */
 .fotorama {
   background-color: #ececec;
-  padding-top: 30px;
 }
 .text-slider {
   position: absolute;
@@ -595,12 +594,14 @@ input[type="search"] {
 */
 .main__block {
   position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .block__name {
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 36px;
   color: #e1524b;
 }
 .block__text {
@@ -721,11 +722,11 @@ input[type="search"] {
 }
 .graphik-name {
   text-align: center;
-  padding-top: 15px;
+  padding-top: 0px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 19px;
+  line-height: 36px;
   color: #7f8c8c;
   text-transform: uppercase;
 }
@@ -739,6 +740,22 @@ input[type="search"] {
   background-repeat: repeat-x;
   background-position: top;
   margin-top: 80px;
+}
+#toTop {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  background-color: #ececec;
+  text-align: center;
+  padding: 0;
+  position: fixed;
+  bottom: 10px;
+  /* отступ кнопки от нижнего края страницы*/
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  color: #76c7c0;
+  border-radius: 50%;
 }
 @media screen and (min-width: 1070px) {/*  .right__container {
     display: none;
@@ -979,9 +996,6 @@ input[type="search"] {
   }
   .news__content-jpg {
     padding-bottom: 10px;
-  }
-  .fotorama {
-    padding-top: 0px;
   }
   .dg-container {
     display: none;

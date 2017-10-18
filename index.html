@@ -12,7 +12,6 @@
         <link rel="stylesheet" type="text/css" href="css/slick.css"/>
         <script src="https://use.fontawesome.com/13fe278ee5.js"></script>
         <script type="text/javascript" src="src/js/modernizr.custom.53451.js"></script>
-        
     </head>
     <body class="main">
         <header class="main__header">
@@ -45,8 +44,10 @@
         <main class="main__nav">
             <div class="fotorama" data-width="100%"
                      data-ratio="666/500"
-                     data-minwidth="320"
-                     data-maxwidth="100vw"
+                     data-nav="false"
+                     data-transition="slide"
+                     data-clicktransition="crossfade"
+                     data-fit="cover"
                      data-minheight="200"
                      data-maxheight="50%" 
                      data-loop="true"
@@ -239,4 +240,5 @@
                 $('#dg-container').gallery();
             });
         </script> 
+        <div id="toTop"><i class="fa fa-angle-double-up fa-3x" aria-hidden="true"></i></div >
     </body>
