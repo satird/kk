@@ -1,0 +1,49 @@
+.main__crumbs {
+	width: 100%;
+	height: 80px;
+	background-color: @bg-lightgrey;
+	margin-bottom: 40px;
+}
+
+.bread__crumbs-direction {
+	position: relative;
+	height: 80px;
+}
+
+.bread__crumbs-direction:before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	bottom: -20px;
+	border: 10px solid transparent;
+	border-top: 10px solid @bg-lightgrey;
+}
+
+.bread__crumbs-name {
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 80px;
+	font-weight: 700;
+	color: @bodyFont;
+	padding-left: 10px;
+}
+
+.bread__crumbs a {
+	text-decoration: none;
+	color: @bodyFont;
+}
+
+.bread__crumbs {
+	float: right;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	line-height: 80px;
+	font-weight: 400;
+	color: @bodyFont;
+}
+
+.crumbs {
+	padding-left: 10px;
+}

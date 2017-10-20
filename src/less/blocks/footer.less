@@ -1,13 +1,14 @@
 .main__footer {
 	position: relative;
 	display: block;
-	height: 100px;
+	min-height: 150px;
 	width: 100%;
 	background-color: @bodyBg;
 	background-image: url(../img/PathGreen.png);
     background-repeat: repeat-x;
     background-position: top;
     margin-top: 80px;
+    /*clear: both;*/
 }
 
 #toTop {
@@ -26,3 +27,51 @@ color: #76c7c0;
 border-radius: 50%;
 }
 
+.footer__wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer__text {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-size: @baseNV2;
+	line-height: 23px;
+	padding: 25px;
+	flex-basis: 360px;
+}
+
+.footer__mail a{
+	padding: 25px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 36px; 
+    transition: 0.2s;
+}
+
+
+
+.footer__mail i {
+	padding-right: 15px;
+}
+
+.footer__icon {
+	padding: 25px;
+}
+
+.footer__icon a{
+	padding: 25px;
+	text-decoration: none;
+	color: #fff; 
+    transition: 0.2s;
+}
+
+.footer__mail a:hover,
+.footer__icon a:hover{
+	color: #e1524b;
+}

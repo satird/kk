@@ -9,9 +9,8 @@
         <title>Совместный проект КК</title>
         <link rel="stylesheet" href="css/style.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-        <script src="https://use.fontawesome.com/13fe278ee5.js"></script>
-        <script type="text/javascript" src="src/js/modernizr.custom.53451.js"></script>
+        <script async src="https://use.fontawesome.com/13fe278ee5.js"></script>
+        <script async type="text/javascript" src="src/js/modernizr.custom.53451.js"></script>
     </head>
     <body class="main">
         <header class="main__header">
@@ -23,8 +22,8 @@
                 <nav  tabindex="0" class="header__nav">
                     <label for="nav-toggle" class="nav-toggle" onclick></label>
                     <ul  tabindex="0" class="header__nav-btn">
-                        <li class="header__navigation-menu header__navigation header__navigation-active"><a class="header__menu-hamburger">Главная</a></li>
-                        <li class="header__navigation header__navigation-news-1"><a href="testpage.html">Кругозор</a></li>
+                        <li class="header__navigation-menu header__navigation header__navigation-active"><span>Главная</span></li>
+                        <li class="header__navigation header__navigation-news-1"><a href="content-list.html">Кругозор</a></li>
                         <li class="header__navigation"><a href="#">Сделай сам</a></li>
                         <li class="header__navigation header__navigation-price-2"><a href="price.html">Домик</a></li>
                         <li class="header__navigation"><a href="#">Кухня</a></li>
@@ -53,14 +52,13 @@
                      data-loop="true"
                      data-allowfullscreen="native"
                      data-autoplay="true">
-                <div class="text-slider" data-img="img/1.jpg"><a href="#">Кругозор</a></div>
+                <div class="text-slider" data-img="img/1.jpg"><a href="content-list.html">Кругозор</a></div>
                 <div class="text-slider" data-img="img/2.jpg"><a href="#">Сделай сам</a></div>
                 <div class="text-slider" data-img="img/3.jpg"><a href="#">Домик</a></div>
                 <div class="text-slider" data-img="img/4.jpg"><a href="#">Кухня</a></div>
                 <div class="text-slider" data-img="img/9.jpg"><a href="#">Забавы</a></div>
                 <div class="text-slider" data-img="img/10.jpg"><a href="#">О нас</a></div>
             </div>
-
             <div class="container">
                 <div class="main__about">
                     <div class="main__about-text">
@@ -73,9 +71,7 @@
                         </a>
                     </button>                    
                 </div>
-
                 <div class="main__news">
-
                     <div class="news__block">
                         <div class="news__block-logo"><i class="fa fa-heart fa-3x" aria-hidden="true"></i></div>
                         <div class="news__block-text">
@@ -88,7 +84,6 @@
                             </a>
                         </button>
                     </div>
-
                     <div class="news__block">
                         <div class="news__block-logo"><i class="fa fa-mars-double fa-3x" aria-hidden="true"></i></div>
                         <div class="news__block-text">
@@ -101,9 +96,8 @@
                             </a>
                         </button>
                     </div>
-
                     <div class="news__block">
-                        <div class="news__block-logo"><i class="fa fa-spinner fa-3x" aria-hidden="true"></i></div>
+                        <div class="news__block-logo"><i class="fa fa-spinner fa-spin fa-pulse fa-3x" aria-hidden="true"></i></div>
                         <div class="news__block-text">
                             <h3>Всё круто</h3>
                             <p>Текст коротенькой новости, от которого все бросятся открывать ссылку, чтобы немедленно прочитать её.</p>
@@ -114,9 +108,8 @@
                             </a>
                         </button>
                     </div>
-
                     <div class="news__block">
-                        <div class="news__block-logo"><i class="fa fa-vk fa-3x" aria-hidden="true"></i></div>
+                        <div class="news__block-logo"><i class="fa fa-vk fa-3x icon-vk" aria-hidden="true"></i></div>
                         <div class="news__block-text">
                             <h3>Всё круто</h3>
                             <p>Текст коротенькой новости, от которого все бросятся открывать ссылку, чтобы немедленно прочитать её.</p>
@@ -148,14 +141,16 @@
 
                     <!-- Для тедефона нижний слайдер-->
                     <div class="fotorama dg-fotorama" data-width="100%"
-                     data-ratio="666/500"
-                     data-minwidth="320"
-                     data-maxwidth="100vw"
-                     data-minheight="200"
-                     data-maxheight="50%" 
-                     data-loop="true"
-                     data-allowfullscreen="native"
-                     data-autoplay="true">
+                         data-ratio="666/500"
+                         data-nav="false"
+                         data-transition="slide"
+                         data-clicktransition="crossfade"
+                         data-fit="cover"
+                         data-minheight="200"
+                         data-maxheight="50%" 
+                         data-loop="true"
+                         data-allowfullscreen="native"
+                         data-autoplay="true">
                         <div class="text-slider" data-img="img/5.jpg"><a href="#">http://hardwork.by</a></div>
                         <div class="text-slider" data-img="img/6.jpg"><a href="#">http://onliner.by</a></div>
                         <div class="text-slider" data-img="img/7.jpg"><a href="#">http://tut.by/</a></div>
@@ -225,7 +220,17 @@
                 </div>
         </main>
         <footer class="main__footer">
-            
+            <div class="container footer__wrap">
+                <!--Logo-->
+                <div class="header__logo footer__logo"><a href="#"><span class="small-name">Таткiна</span><span class="big-name">Хата</span></a>
+                </div>
+                <div class="footer__text"><span>Круто что вы долистали до конца и даже прочитали footer. Похоже у вас много свободного времени. В таком случае предлагаю ещё посетить нашу страницу в VK, и подписать на инстаграм, что бы не пропустить новых статей. Мир вам.</span></div>
+                <div class="footer__mail"><a href="mailto:tatkinahata@gmail.com" title="отправить сообщение"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>tatkinahata@gmail.com</a></div>
+                <div class="footer__icon">
+                    <a href="https://vk.com/id137310461" class="footer__icon-vk"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+                    <a href="#" class="footer__icon-ins"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
         </footer>
 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
